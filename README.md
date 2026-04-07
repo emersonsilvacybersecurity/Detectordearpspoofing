@@ -1,17 +1,66 @@
-#  ARP Shield - IDS de Detecção de ARP Spoofing (MITRE T1557.002)
+# 🛡️ Python ARP Spoofing Detector
 
-Este projeto demonstra a detecção em tempo real de ataques de envenenamento de cache ARP (ARP Poisoning), simulando um cenário de **Adversary-in-the-Middle (AiTM)**.
+Ferramenta de monitoramento de rede desenvolvida para detectar ataques de ARP Cache Poisoning (Man-in-the-Middle), garantindo maior visibilidade e segurança em redes locais.
 
-##  Funcionalidades
-- **Monitoramento Passivo:** Utiliza Sniffing de rede para validar pacotes ARP.
-- **Detecção de Anomalias:** Compara o MAC do Gateway em tempo real com um banco de confiança.
-- **Mapeamento MITRE:** Alertas estruturados com base na técnica T1557.002.
+---
 
-##  Tecnologias Utilizadas
-- **Linguagem:** Python 3.x
-- **Biblioteca:** Scapy (Manipulação de pacotes de rede)
-- **SO:** Windows/Linux (Requer privilégios de Administrador)
+## 🎯 Objetivo
 
+Identificar tentativas de falsificação de MAC Address em redes locais, detectando possíveis ataques de interceptação de tráfego (MITM).
 
-##  Aviso Legal (Disclaimer)
-Este software foi desenvolvido para fins estritamente educacionais e laboratoriais como parte da minha graduação em Segurança Cibernética na UniCesumar. O uso destas ferramentas em redes de terceiros sem autorização explícita é ilegal e antiético.
+---
+
+## ⚙️ Funcionalidades
+
+- 📡 Monitoramento ARP em tempo real.
+- 🔍 Validação de integridade IP ↔ MAC.
+- 🚨 Detecção de ataques ARP Spoofing.
+- 🧠 Alertas baseados na técnica MITRE ATT&CK (T1557.002).
+- ⚠️ Identificação de dispositivos suspeitos na rede.
+
+---
+
+## 🧰 Tecnologias Utilizadas
+
+- Python 3.x
+- scapy
+
+---
+
+## 🚀 Como executar
+
+Siga os passos abaixo para rodar o projeto localmente:
+
+### 📥 1. Clonar o repositório
+```bash
+git clone https://github.com/emersonsilvacybersecurity/Detectordearpspoofing.git
+```
+
+### 📂 2. Acessar a pasta do projeto
+```bash
+cd Detectordearpspoofing
+```
+
+### ▶️ 3. Executar o script
+
+#### 💻 Windows
+```bash
+python detector.py
+```
+
+#### 🐧 Linux
+```bash
+python3 detector.py
+```
+
+---
+
+## ⚠️ Análise de segurança (Aviso Legal)
+
+Este projeto foi desenvolvido exclusivamente para fins educacionais e auditorias de segurança autorizadas.
+
+- ⚖️ Ética: O uso desta ferramenta deve ser restrito a redes autorizadas.
+- 🚫 Responsabilidade: O autor não se responsabiliza por qualquer uso indevido ou danos causados a terceiros.
+
+---
+
